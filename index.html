@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toppyo Talk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Toppyo Talk</h1>
+    <p>モードを選んで、突拍子もないお題を楽しもう！</p>
+
+    <div class="mode-buttons">
+      <button onclick="loadTopics('light')">雑談スタート用</button>
+      <button onclick="loadTopics('deep')">ちょっと深め</button>
+      <button onclick="loadTopics('chaos')">カオス</button>
+      <button onclick="loadTopics('relation')">相手を知る</button>
+    </div>
+
+    <div class="topic-box">
+      <h2 id="topic">ここにお題が表示されます</h2>
+      <button onclick="showRandomTopic()">次のお題 ▶</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
